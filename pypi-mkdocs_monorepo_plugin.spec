@@ -5,7 +5,7 @@
 #
 Name     : pypi-mkdocs_monorepo_plugin
 Version  : 1.0.4
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/db/ef/2331f3daefca27e7cbac5f3bdb0d0fc21c5bc75a37ffa80ae846f08dbaa5/mkdocs-monorepo-plugin-1.0.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/db/ef/2331f3daefca27e7cbac5f3bdb0d0fc21c5bc75a37ffa80ae846f08dbaa5/mkdocs-monorepo-plugin-1.0.4.tar.gz
 Summary  : Plugin for adding monorepository support in Mkdocs.
@@ -58,7 +58,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1681502691
+export SOURCE_DATE_EPOCH=1681788572
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
