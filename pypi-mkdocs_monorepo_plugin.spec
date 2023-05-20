@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-mkdocs_monorepo_plugin
-Version  : 1.0.4
-Release  : 2
-URL      : https://files.pythonhosted.org/packages/db/ef/2331f3daefca27e7cbac5f3bdb0d0fc21c5bc75a37ffa80ae846f08dbaa5/mkdocs-monorepo-plugin-1.0.4.tar.gz
-Source0  : https://files.pythonhosted.org/packages/db/ef/2331f3daefca27e7cbac5f3bdb0d0fc21c5bc75a37ffa80ae846f08dbaa5/mkdocs-monorepo-plugin-1.0.4.tar.gz
+Version  : 1.0.5
+Release  : 3
+URL      : https://files.pythonhosted.org/packages/58/4f/9bab264313a713dfc75adb55478c543c31f8e411877847fd80062e7a2bfc/mkdocs-monorepo-plugin-1.0.5.tar.gz
+Source0  : https://files.pythonhosted.org/packages/58/4f/9bab264313a713dfc75adb55478c543c31f8e411877847fd80062e7a2bfc/mkdocs-monorepo-plugin-1.0.5.tar.gz
 Summary  : Plugin for adding monorepository support in Mkdocs.
 Group    : Development/Tools
 License  : Apache-2.0
@@ -47,10 +47,10 @@ python3 components for the pypi-mkdocs_monorepo_plugin package.
 
 
 %prep
-%setup -q -n mkdocs-monorepo-plugin-1.0.4
-cd %{_builddir}/mkdocs-monorepo-plugin-1.0.4
+%setup -q -n mkdocs-monorepo-plugin-1.0.5
+cd %{_builddir}/mkdocs-monorepo-plugin-1.0.5
 pushd ..
-cp -a mkdocs-monorepo-plugin-1.0.4 buildavx2
+cp -a mkdocs-monorepo-plugin-1.0.5 buildavx2
 popd
 
 %build
@@ -58,15 +58,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1681788572
+export SOURCE_DATE_EPOCH=1684610891
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
