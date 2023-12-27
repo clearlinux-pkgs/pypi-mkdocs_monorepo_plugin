@@ -5,7 +5,7 @@
 #
 Name     : pypi-mkdocs_monorepo_plugin
 Version  : 1.0.5
-Release  : 4
+Release  : 5
 URL      : https://files.pythonhosted.org/packages/58/4f/9bab264313a713dfc75adb55478c543c31f8e411877847fd80062e7a2bfc/mkdocs-monorepo-plugin-1.0.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/58/4f/9bab264313a713dfc75adb55478c543c31f8e411877847fd80062e7a2bfc/mkdocs-monorepo-plugin-1.0.5.tar.gz
 Summary  : Plugin for adding monorepository support in Mkdocs.
